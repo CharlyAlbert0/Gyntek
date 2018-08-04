@@ -22,11 +22,11 @@ export class IntroComponent implements OnInit {
  debugger
 
  //this.router.navigate(['moredev']);
-    this._DialogsService.ShowMoreDev().subscribe(data => {
-          if(data){
+    // this._DialogsService.ShowMoreDev().subscribe(data => {
+    //       if(data){
 
-          }
-        });
+    //       }
+    //     });
 
   }
 

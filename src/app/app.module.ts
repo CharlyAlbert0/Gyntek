@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule,ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
@@ -23,7 +23,13 @@ import { DialogError} from './gyntek/infraestructure/dialogs/component/dialogser
 import { DialogDevelopComponent} from './gyntek/infraestructure/dialogs/component/dialogsDevelop.component';
 import {MatStepperModule} from '@angular/material';
 import { RouterModule } from '@angular/router';
-import {MODULE_COMPONENTS,app_routing} from './app.routing';
+import {MODULE_COMPONENTS, app_routing} from './app.routing';
+import { Dialog } from './gyntek/infraestructure/dialogs/component/dialogs.component';
+import { DialogInput } from './gyntek/infraestructure/dialogs/component/dialogsinput.component';
+import { LoadingDialog } from './gyntek/infraestructure/dialogs/component/loadingdialog.component';
+import { GlobalAttributesComponent } from './gyntek/infraestructure/globalattributes/component/globalattributes.component';
+import { LogginComponent } from './gyntek/infraestructure/loggin/component/loggin.component';
+import {  CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 
 @NgModule({
@@ -42,10 +48,15 @@ import {MODULE_COMPONENTS,app_routing} from './app.routing';
     MoreDevComponent,
     DialogError,
     DialogDevelopComponent,
-    MODULE_COMPONENTS
+    MODULE_COMPONENTS,
+    Dialog,
+    DialogInput,
+    LoadingDialog,
+    GlobalAttributesComponent,
+    LogginComponent
 
   ],
-  exports:[DialogError,DialogDevelopComponent],
+  exports: [DialogError, DialogDevelopComponent],
   imports: [
     BrowserModule,
     FormsModule,
@@ -57,7 +68,10 @@ import {MODULE_COMPONENTS,app_routing} from './app.routing';
     app_routing,
   ],
   providers: [DialogsService],
-  entryComponents:[DialogError,DialogDevelopComponent],
-  bootstrap: [AppComponent]
+  entryComponents: [ DialogError, DialogDevelopComponent],
+  bootstrap: [AppComponent],
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA
+],
 })
 export class AppModule { }
