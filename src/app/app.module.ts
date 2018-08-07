@@ -30,6 +30,7 @@ import { LoadingDialog } from './gyntek/infraestructure/dialogs/component/loadin
 import { GlobalAttributesComponent } from './gyntek/infraestructure/globalattributes/component/globalattributes.component';
 import { LogginComponent } from './gyntek/infraestructure/loggin/component/loggin.component';
 import {  CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { SystemContext } from './gyntek/infraestructure/context/model/systemcontext';
 
 
 @NgModule({
@@ -67,7 +68,7 @@ import {  CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
     ReactiveFormsModule,
     app_routing,
   ],
-  providers: [DialogsService],
+  providers: [DialogsService,SystemContext],
   entryComponents: [ DialogError, DialogDevelopComponent],
   bootstrap: [AppComponent],
   schemas: [

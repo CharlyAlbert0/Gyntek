@@ -33,7 +33,7 @@
 
 
 
-                                <div class="" style="width:200px;text-align:center;margin-left: 3em;">
+                                <div class="" style="width:200px;text-align:center;margin-left: 4em;">
                                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="319 174 133 94"><g data-item-type="text" data-item="Business" id="logo__item--business" class="logo__item">
                       <g class="logo__item__inner" transform="translate(333.0703125 227.68343362660335) scale(0.7768306857807051 0.7768306857807051) rotate(0 0 0)">
                         <text data-part-id="logo__item--business" dy="0" dominant-baseline="auto" alignment-baseline="auto"  font-size="20px" fill="#fff" letter-spacing="2" font-weight="bold" font-style="normal" data-font-weight="bold" data-font-style="normal"  >&lt;GynTek&gt;</text>
@@ -63,16 +63,18 @@
 
                                 </div>
 
-                                <img src="assets/images/lobo2.png" width="100px" alt="" style="margin-top: -26%;margin-left: 26%;">
+                                <img src="assets/images/lobo2.png" width="150px" alt="" style="margin-top: -26%;margin-left: 2em;">
 
                             </div>
 
 
                         </h1>
                         <h1 class="to-animate">We <span id="do">Codify</span> something you <span id="want">love</span>.</h1>
-                        <h2 class="to-animate">We develop
+                        <!-- <h2 class="to-animate">We develop
                             <a href="https://en.wikipedia.org/wiki/Application_software" target="_blank" title="Application software Definition Wikipedia">Application software</a> and
-                            <a href="https://en.wikipedia.org/wiki/Mobile_app" target="_blank" title="Mobile app Definition Wikipedia">Mobile app</a> designed in the needs of your business or lifestyle.</h2>
+                            <a href="https://en.wikipedia.org/wiki/Mobile_app" target="_blank" title="Mobile app Definition Wikipedia">Mobile app</a> designed in the needs of your business or lifestyle.</h2> -->
+
+                        <h2 class="to-animate">{{systemContext.Language.intro}}</h2>
                     </div>
 
 
@@ -98,9 +100,9 @@
                 <div class="overlay"></div>
                 <div class="fh5co-text">
                     <i class="fh5co-intro-icon icon-wrench"></i>
-                    <h2>Develop</h2>
-                    <p>Special custom software to cover you personal needs of IT area and you life style.</p>
-                    <p><a class="btn btn-primary" (click)="openMoreDev()">Tell Me more</a></p>
+                    <h2>{{systemContext.Language.introt1}}</h2>
+                    <p>{{systemContext.Language.intross1}}</p>
+                    <p><a class="btn btn-primary" (click)="openMoreDev()">{{systemContext.Language.introsb}}</a></p>
                 </div>
             </div>
             <div class="fh5co-block to-animate" style="background-image: url(assets/images/img_7.jpg);">
@@ -108,9 +110,9 @@
                 <div class="overlay"></div>
                 <div class="fh5co-text">
                     <i class="fh5co-intro-icon icon-support"></i>
-                    <h2>IT Support</h2>
-                    <p>Let us fix your IT problems computer, printer and network are always a deal.</p>
-                    <p><a href="#" class="btn btn-primary">Tell Me more</a></p>
+                    <h2>{{systemContext.Language.introt2}}</h2>
+                    <p>{{systemContext.Language.intross2}}</p>
+                    <p><a href="#" class="btn btn-primary">{{systemContext.Language.introsb}}</a></p>
                 </div>
             </div>
 
@@ -119,9 +121,9 @@
                 <div class="overlay"></div>
                 <div class="fh5co-text">
                     <i class="fh5co-intro-icon icon-rocket"></i>
-                    <h2>Other Services</h2>
-                    <p>The technology is everywhere see what can do for you.</p>
-                    <p><a href="#" class="btn btn-primary">Tell Me more</a></p>
+                    <h2>{{systemContext.Language.introt3}}</h2>
+                    <p>{{systemContext.Language.intross3}}</p>
+                    <p><a href="#" class="btn btn-primary">{{systemContext.Language.introsb}}</a></p>
                 </div>
             </div>
         </div>

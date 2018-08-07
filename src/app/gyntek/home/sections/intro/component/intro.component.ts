@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { DialogsService } from '../../../../infraestructure/dialogs/service/dialogs.service';
 import { EnumTypeD,EnumSizeD,EnumCategoryD,EnumIconD } from '../../../../infraestructure/enums/enumdialog';
 import { Router,ActivatedRoute } from '@angular/router';
+import { SystemContext } from '../../../../infraestructure/context/model/systemcontext';
+
 
 @Component({
   selector: 'app-intro',
@@ -11,7 +13,7 @@ import { Router,ActivatedRoute } from '@angular/router';
 export class IntroComponent implements OnInit {
 
 
-  constructor(private _DialogsService: DialogsService,private router: Router) { }
+  constructor(private systemContext:SystemContext,private _DialogsService: DialogsService,private router: Router) { }
 
   ngOnInit() {
 

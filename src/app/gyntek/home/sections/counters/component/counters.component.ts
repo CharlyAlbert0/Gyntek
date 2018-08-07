@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SystemContext } from '../../../../infraestructure/context/model/systemcontext';
 
 @Component({
   selector: 'app-counters',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CountersComponent implements OnInit {
 
-  constructor() { }
+  constructor(private systemContext:SystemContext) { }
 
   ngOnInit() {
   }
