@@ -3,3 +3,38 @@
     -webkit-animation-delay: 12s;
     -webkit-animation-iteration-count: infinite;
 }
+
+.Gynteklogo {
+    width: 200px;
+    text-align: center;
+    margin-left: 4em;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-delay: 12s;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@media screen and (max-width: 468px) {
+    .Gynteklogo {
+        width: 200px;
+        text-align: center;
+        margin-left: 1em;
+    }
+}
+
+.idiomaicoSpa {
+    background: url(/assets/images/translationSpa.png) center right no-repeat;
+    padding: 0 30px 0 0;
+    white-space: nowrap;
+    background-size: 15%;
+    background-position: right;
+}
+
+@media screen and (max-width: 768px) {
+    .idiomaicoSpa {
+        background: url(/assets/images/translationSpa.png) center right no-repeat;
+        padding: 0 30px 0 0;
+        white-space: nowrap;
+        background-size: 5%;
+        background-position: right;
+    }
+}

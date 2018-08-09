@@ -12,7 +12,7 @@ import { EnumLanguage } from '../../../infraestructure/enums/enumlanguage';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor(private systemContext: SystemContext) { }
+  constructor(public systemContext: SystemContext) { }
 
   ngOnInit() {
      debugger

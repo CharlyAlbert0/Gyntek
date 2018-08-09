@@ -13,7 +13,7 @@ import { SystemContext } from '../../../../infraestructure/context/model/systemc
 export class IntroComponent implements OnInit {
 
 
-  constructor(private systemContext:SystemContext,private _DialogsService: DialogsService,private router: Router) { }
+  constructor(public systemContext:SystemContext,private _DialogsService: DialogsService,private router: Router) { }
 
   ngOnInit() {
 

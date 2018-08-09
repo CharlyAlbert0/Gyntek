@@ -8,7 +8,7 @@ import { SystemContext } from '../../../../infraestructure/context/model/systemc
 })
 export class WorkComponent implements OnInit {
 
-  constructor(private systemContext:SystemContext) { }
+  constructor(public systemContext:SystemContext) { }
 
   ngOnInit() {
   }
